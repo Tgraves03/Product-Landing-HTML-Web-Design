@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header-img {
+    height: 60px;
+}
+
+/* Navigation Styles */
+.nav-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    background: #f8f9fa;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 100px; /* Ensures content isn't hidden behind navbar */
+    padding: 20px;
+}
+
+/* Video Section */
+#video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Section */
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.product {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product caption {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Pricing Section */
+.price-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.price-section input {
+    font-size: 1rem;
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+.price-section h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #222;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#submit {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design (Media Query) */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .product-images {
+        flex-direction: column;
+    }
+
+    .price-section {
+        width: 90%;
+    }
+}

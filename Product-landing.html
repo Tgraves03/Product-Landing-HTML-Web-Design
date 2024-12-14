@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product-landing.css">
+    <title>Guitar Shop</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <img id="header-img" src="https://th.bing.com/th/id/R.4f1b1630f1340f20afb3af7ef05b742b?rik=ZcYMKbMNrcNpLQ&pid=ImgRaw&r=0" alt="Logo">
+        <nav id="nav-bar" class="nav-bar">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#products">Products</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Embedded Video -->
+        <section id="home">
+            <h1>Check Out Our Special Selection of Electric Guitars</h1>
+            <h2>Check Out the Awesome Video!</h2>
+            <iframe id="video" src="https://www.youtube.com/embed/oC3xgeEV1aw" allowfullscreen></iframe>
+            <h2>Enter your email to be notified when we release new products!</h2>
+        </section>
+
+        <!-- Signup Form -->
+        <form id="form" action=""> <!--Add an action depending on where data needs to be sent-->
+            <input id="email" type="email" name="email" placeholder="example@email.com" required>
+            <input type="submit" id="submit" value="Subscribe">
+        </form>
+
+        <!-- Product Section -->
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product-images">
+                <div class="product">
+                    <img 
+                        class="product-image" 
+                        src="https://th.bing.com/th/id/OIP.a-TxmP7JD6KtQhO6aqBfeAHaHa?rs=1&pid=ImgDetMain" 
+                        alt="Sunburst Gretsch Electric Guitar">
+                    <caption>Gretsch G5120 Sunburst</caption>
+                </div>
+                <div class="product">
+                    <img 
+                        class="product-image" 
+                        src="https://cdn.shopify.com/s/files/1/0202/0250/products/2504811509_gtr_cntbdyright_001_nr.jpg?v=1510590466" 
+                        alt="Candy Red Gretsch Electric Guitar">
+                    <caption>Gretsch G5420TG Candy Red</caption>
+                </div>
+                <div class="product">
+                    <img 
+                        class="product-image" 
+                        src="https://cdn.shopify.com/s/files/1/0343/4368/2183/products/gretsch-electric-guitars-hollow-body-gretsch-g5120-electromatic-hollow-body-black-2010-u3253829601-28431980855431_720x720@2x.jpg?v=1628980730" 
+                        alt="Black Gretsch Electric Guitar">
+                    <caption>Gretsch G5120 Black</caption>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <div class="price-section">
+                <h3>Gretsch G5120 Sunburst</h3>
+                <p>Price: $499.99</p>
+                <p>The Gretsch G5120 in classic Sunburst delivers iconic vintage style and tone. Perfect for rockabilly, jazz, and blues.</p>
+            </div>
+            <div class="price-section">
+                <h3>Gretsch G5420TG Candy Red</h3>
+                <p>Price: $699.99</p>
+                <p>Make a bold statement with the Gretsch G5420TG in stunning Candy Red, complete with luxurious gold hardware.</p>
+            </div>
+            <div class="price-section">
+                <h3>Gretsch G5120 Black</h3>
+                <p>Price: $799.99</p>
+                <p>Bold and sophisticated, the Gretsch G5120 in Black exudes sleek elegance with versatile tones.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
